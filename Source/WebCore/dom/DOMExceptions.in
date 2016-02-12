@@ -1,0 +1,14 @@
+namespace=Exception
+
+DOMCoreException
+EventException
+FileException conditional=BLOB
+RangeException
+#if ENABLE_WEBCL
+WebCLException conditional=WEBCL
+#endif
+SQLException conditional=SQL_DATABASE
+SVGException conditional=SVG
+XMLHttpRequestException
+XPathException
+
